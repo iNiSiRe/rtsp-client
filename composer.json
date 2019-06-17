@@ -1,0 +1,18 @@
+{
+    "name": "inisire/rtsp-client",
+    "license": "proprietary",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.3",
+        "ext-json": "*",
+        "react/socket": "^1.2",
+        "react/http": "^0.8"
+    },
+    "require-dev": {
+    }
+}

@@ -1,0 +1,15 @@
+version: "3"
+services:
+
+  php:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    ports:
+      - "8000:8000"
+      - "8080:8080"
+    command: "sleep 9999999999"
+    working_dir: /var/www
+    volumes:
+      - .:/var/www/
+      - /tmp:/tmp
