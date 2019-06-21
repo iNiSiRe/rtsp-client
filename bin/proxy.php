@@ -12,7 +12,7 @@ $socket->on('connection', function (React\Socket\ConnectionInterface $outer) use
     $outer->pause();
 
     $connector = new React\Socket\Connector($loop);
-    $connector->connect('192.168.31.214:554')->then(function (React\Socket\ConnectionInterface $inner) use ($loop, $outer) {
+    $connector->connect('192.168.31.197:554')->then(function (React\Socket\ConnectionInterface $inner) use ($loop, $outer) {
 
         echo 'inner connected' . PHP_EOL;
 
